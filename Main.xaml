@@ -141,7 +141,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uoia:GenerateChatCompletion ActivityInstanceId="ac1caed8-1177-4575-b794-6fd16e5751a4" sap2010:Annotation.AnnotationText="notation" BindingsVersion="2.1" BusinessEntityName="Generate Chat Completion" ConfiguredBusinessEntity="generateChatCompletion" ConnectionId="30c6884d-db40-4c39-9b66-b64374b5f3a1" Connector="uipath-openai-openai" CrudOperation="Create" DesignConnectionEnabled="True" DisplayName="Generate Chat Completion" sap:VirtualizedContainerService.HintSize="410,183" sap2010:WorkflowViewState.IdRef="GenerateChatCompletion_1">
+    <uoia:GenerateChatCompletion ActivityInstanceId="ac1caed8-1177-4575-b794-6fd16e5751a4" sap2010:Annotation.AnnotationText="call open ui " BindingsVersion="2.1" BusinessEntityName="Generate Chat Completion" ConfiguredBusinessEntity="generateChatCompletion" ConnectionId="30c6884d-db40-4c39-9b66-b64374b5f3a1" Connector="uipath-openai-openai" CrudOperation="Create" DesignConnectionEnabled="True" DisplayName="Generate Chat Completion" sap:VirtualizedContainerService.HintSize="410,183" sap2010:WorkflowViewState.IdRef="GenerateChatCompletion_1">
       <uoia:GenerateChatCompletion.BusinessEntity>
         <uibi:BusinessEntity Metadata="{x:Reference __ReferenceID14}" Name="generateChatCompletion">
           <uibi:BusinessEntity.AllFields>
