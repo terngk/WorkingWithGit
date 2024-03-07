@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>970,1544</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>970,1513</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -128,7 +128,7 @@
       <AssemblyReference>UiPath.OpenAI.IntegrationService</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="472,1479" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="472,1448" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="uciascb:batchProfile[]" Name="Output" />
       <Variable x:TypeArguments="uciascb:batchProfile" Name="Output1" />
@@ -141,7 +141,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uoia:GenerateChatCompletion ActivityInstanceId="ac1caed8-1177-4575-b794-6fd16e5751a4" sap2010:Annotation.AnnotationText="call open ui " BindingsVersion="2.1" BusinessEntityName="Generate Chat Completion" ConfiguredBusinessEntity="generateChatCompletion" ConnectionId="30c6884d-db40-4c39-9b66-b64374b5f3a1" Connector="uipath-openai-openai" CrudOperation="Create" DesignConnectionEnabled="True" DisplayName="Generate Chat Completion" sap:VirtualizedContainerService.HintSize="410,183" sap2010:WorkflowViewState.IdRef="GenerateChatCompletion_1">
+    <uoia:GenerateChatCompletion ActivityInstanceId="ac1caed8-1177-4575-b794-6fd16e5751a4" BindingsVersion="2.1" BusinessEntityName="Generate Chat Completion" ConfiguredBusinessEntity="generateChatCompletion" ConnectionId="30c6884d-db40-4c39-9b66-b64374b5f3a1" Connector="uipath-openai-openai" CrudOperation="Create" DesignConnectionEnabled="True" DisplayName="Generate Chat Completion" sap:VirtualizedContainerService.HintSize="410,152" sap2010:WorkflowViewState.IdRef="GenerateChatCompletion_1">
       <uoia:GenerateChatCompletion.BusinessEntity>
         <uibi:BusinessEntity Metadata="{x:Reference __ReferenceID14}" Name="generateChatCompletion">
           <uibi:BusinessEntity.AllFields>
@@ -378,11 +378,6 @@
       <uoia:GenerateChatCompletion.TelemetryProperties>
         <scg:Dictionary x:TypeArguments="uibi:TelemetryGroup, scg:IDictionary(x:String, x:String)" />
       </uoia:GenerateChatCompletion.TelemetryProperties>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
     </uoia:GenerateChatCompletion>
     <ucia:ListRecords BindingsVersion="2.1" BusinessEntityName="BatchProfile" ConfiguredBusinessEntity="" ConnectionId="406155bd-5fc2-4c5a-90f5-5a9aa018dbd6" Connector="custom-microtjwceml-bsprofile" ConnectorName="BSProfile" ConnectorVersion="0.0.0" CrudOperation="Search" DesignConnectionEnabled="True" DisplayName="List Records" sap:VirtualizedContainerService.HintSize="410,305" sap2010:WorkflowViewState.IdRef="ListRecords_1" UseRawCEQL="False">
       <ucia:ListRecords.BusinessEntity>
