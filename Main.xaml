@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>970,1513</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>970,1544</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -128,7 +128,7 @@
       <AssemblyReference>UiPath.OpenAI.IntegrationService</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="472,1448" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="472,1479" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="uciascb:batchProfile[]" Name="Output" />
       <Variable x:TypeArguments="uciascb:batchProfile" Name="Output1" />
@@ -492,6 +492,12 @@
       </ui:ForEach.Body>
     </ui:ForEach>
     <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="JobTriggerred.txt" sap:VirtualizedContainerService.HintSize="410,133" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[String.join(&quot;/&quot;,UiPathEventConnector,UiPathEvent,UiPathEventObjectType,UiPathEventObjectId)]" />
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="410,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[System.IO.Path.Combine(System.Environment.CurrentDirectory,&quot;data&quot;,&quot;name of file.zip&quot;)]" />
+    <ui:LogMessage sap2010:Annotation.AnnotationText="log message" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="410,172" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[System.IO.Path.Combine(System.Environment.CurrentDirectory,&quot;data&quot;,&quot;name of file.zip&quot;)]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
   </Sequence>
 </Activity>
